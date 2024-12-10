@@ -1,0 +1,81 @@
+import {
+  FaReact,
+  FaNode,
+  FaPython,
+  FaDatabase,
+  FaCode,
+  FaTools,
+  FaLaptopCode,
+  FaHtml5,
+  FaCss3,
+  FaJs,
+  FaGit,
+  FaDocker,
+  FaJava,
+  FaFigma,
+  FaBootstrap,
+} from "react-icons/fa";
+import {
+  SiMongodb,
+  SiPostgresql,
+  SiTypescript,
+  SiTailwindcss,
+  SiRedux,
+  SiExpress,
+  SiNestjs,
+  SiDjango,
+  SiSpringboot,
+  SiMysql,
+  SiSqlite,
+  SiNpm,
+} from "react-icons/si";
+
+export const skillsData = [
+  {
+    title: "Frontend",
+    icon: FaLaptopCode,
+    skills: [
+      { name: "React", icon: FaReact },
+      { name: "TypeScript", icon: SiTypescript },
+      { name: "Redux", icon: SiRedux },
+      { name: "HTML5", icon: FaHtml5 },
+      { name: "CSS3", icon: FaCss3 },
+      { name: "JavaScript", icon: FaJs },
+      { name: "Bootstrap", icon: FaBootstrap },
+      { name: "Tailwind CSS", icon: SiTailwindcss },
+    ],
+  },
+  {
+    title: "Backend",
+    icon: FaCode,
+    skills: [
+      { name: "Node.js", icon: FaNode },
+      { name: "Express.js", icon: SiExpress },
+      { name: "NestJS", icon: SiNestjs },
+      { name: "Python", icon: FaPython },
+      { name: "Django", icon: SiDjango },
+      { name: "Java", icon: FaJava },
+      { name: "SpringBoot", icon: SiSpringboot },
+    ],
+  },
+  {
+    title: "Database",
+    icon: FaDatabase,
+    skills: [
+      { name: "MongoDB", icon: SiMongodb },
+      { name: "PostgreSQL", icon: SiPostgresql },
+      { name: "SQLite", icon: SiSqlite },
+      { name: "MySQL", icon: SiMysql },
+    ],
+  },
+  {
+    title: "Tools & Technologies",
+    icon: FaTools,
+    skills: [
+      { name: "Git", icon: FaGit },
+      { name: "Figma", icon: FaFigma },
+      { name: "npm", icon: SiNpm },
+      { name: "Docker", icon: FaDocker },
+    ],
+  },
+];
