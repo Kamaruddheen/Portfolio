@@ -17,7 +17,7 @@ const Hero = () => {
             transition={{ duration: 0.8 }}
             className="font-black text-white lg:text-[80px] sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[98px] mt-2"
           >
-            Hi, I'm <span className="text-[#915EFF]">Muhammadh</span>
+            Hi, I&apos;m <span className="text-[#915EFF]">Muhammadh</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, x: -50 }}
