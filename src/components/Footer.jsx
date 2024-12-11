@@ -37,7 +37,7 @@ const Footer = () => {
                 <li key={link.id}>
                   <a
                     href={`#${link.id}`}
-                    className="text-secondary hover:text-[#915EFF] transition-colors"
+                    className="relative text-secondary hover:text-[#915EFF] transition-colors"
                   >
                     {link.title}
                   </a>
@@ -67,7 +67,7 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
-                  className="w-10 h-10 rounded-full bg-tertiary flex items-center justify-center hover:bg-[#915EFF] transition-colors"
+                  className="relative w-10 h-10 rounded-full bg-tertiary flex items-center justify-center hover:bg-[#915EFF] transition-colors"
                 >
                   <Icon className="w-5 h-5 text-white" />
                 </motion.a>

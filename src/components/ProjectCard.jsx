@@ -25,7 +25,7 @@ const ProjectCard = ({ project, index }) => {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
             onClick={() => window.open(source_code_link, "_blank")}
-            className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+            className="bg-tertiary w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
           >
             <FaGithub className="w-1/2 h-1/2 text-white" />
           </motion.div>
@@ -33,7 +33,7 @@ const ProjectCard = ({ project, index }) => {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
             onClick={() => window.open(live_demo_link, "_blank")}
-            className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+            className="bg-tertiary w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
           >
             <FaExternalLinkAlt className="w-1/2 h-1/2 text-white" />
           </motion.div>
