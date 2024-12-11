@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import profile from "../assets/images/kamar.png";
 
 const fadeIn = (direction, delay) => ({
   hidden: {
@@ -56,8 +57,12 @@ const About = () => {
             viewport={{ once: true }}
             className="flex items-center justify-center"
           >
-            <div className="w-full max-w-md h-[400px] bg-tertiary rounded-2xl border-2 border-[#915EFF] flex items-center justify-center">
-              <img src="" alt="Muhammadh Kamaruddheen" />
+            <div className="w-full max-w-md h-[400px] bg-tertiary flex items-center justify-center">
+              <img
+                className="h-48 w-full object-contain violet-gradient md:h-full md:w-92 rounded-2xl border-2 border-[#915EFF]"
+                src={profile}
+                alt="Muhammadh Kamaruddheen"
+              />
             </div>
           </motion.div>
         </div>
