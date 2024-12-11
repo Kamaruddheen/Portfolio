@@ -14,6 +14,9 @@ import { BiLogoJquery } from "react-icons/bi";
 import { DiDjango } from "react-icons/di";
 import { SiRedux } from "react-icons/si";
 
+import WW_thumbnail from "../assets/images/workoutwings.png";
+import CC_thumbnail from "../assets/images/crwn-clothing.png";
+
 export const projectsData = [
   {
     title: "WorkoutWings",
@@ -41,7 +44,7 @@ export const projectsData = [
         icon: SiTailwindcss,
       },
     ],
-    image: "../src/assets/images/workoutwings.png",
+    image: WW_thumbnail,
     source_code_link: "https://github.com/pesto-students/frontend-repo-titans",
     live_demo_link: "https://workoutwings.vercel.app",
   },
@@ -105,7 +108,7 @@ export const projectsData = [
         icon: BiLogoFirebase,
       },
     ],
-    image: "../src/assets/images/crwn-clothing.png",
+    image: CC_thumbnail,
     source_code_link: "https://github.com/Kamaruddheen/crwn-clothing",
     live_demo_link: "https://crwn-clothing-drab.vercel.app/",
   },

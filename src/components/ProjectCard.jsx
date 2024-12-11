@@ -1,9 +1,10 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import React from "react";
+import { motion } from "framer-motion";
+import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 const ProjectCard = ({ project, index }) => {
-  const { title, description, tags, image, source_code_link, live_demo_link } = project;
+  const { title, description, tags, image, source_code_link, live_demo_link } =
+    project;
 
   return (
     <motion.div
@@ -13,7 +14,7 @@ const ProjectCard = ({ project, index }) => {
       whileHover={{ y: -10 }}
       className="bg-tertiary rounded-2xl p-5 sm:w-full"
     >
-      <div className="relative w-full h-[230px] group">
+      <div className="relative w-full h-[300px] group">
         <img
           src={image}
           alt={title}
