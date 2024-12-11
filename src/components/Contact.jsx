@@ -62,7 +62,7 @@ const Contact = () => {
                 type="text"
                 name="name"
                 required
-                className="bg-tertiary py-4 px-6 text-white rounded-lg w-full outline-none border-none"
+                className="relative bg-tertiary py-4 px-6 text-white rounded-lg w-full outline-none border-none"
                 placeholder="Enter your name"
               />
             </div>
@@ -75,7 +75,7 @@ const Contact = () => {
                 type="email"
                 name="email"
                 required
-                className="bg-tertiary py-4 px-6 text-white rounded-lg w-full outline-none border-none"
+                className="relative bg-tertiary py-4 px-6 text-white rounded-lg w-full outline-none border-none"
                 placeholder="Enter your email"
               />
             </div>
@@ -86,7 +86,7 @@ const Contact = () => {
                 rows="7"
                 name="message"
                 required
-                className="bg-tertiary py-4 px-6 text-white rounded-lg w-full outline-none border-none"
+                className="relative bg-tertiary py-4 px-6 text-white rounded-lg w-full outline-none border-none"
                 placeholder="Tell me, I'm all ears"
               />
             </div>

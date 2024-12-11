@@ -8,7 +8,7 @@ const LoadingScreen = () => {
       animate={{ opacity: 0 }}
       transition={{ duration: 1.5, delay: 2 }}
       onAnimationComplete={() => (document.body.style.overflow = "auto")}
-      className="fixed inset-0 z-50 flex items-center justify-center bg-primary"
+      className="fixed inset-0 z-1000 flex items-center justify-center bg-primary"
     >
       <motion.div
         initial={{ scale: 0 }}

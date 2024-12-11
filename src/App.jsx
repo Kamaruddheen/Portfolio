@@ -8,6 +8,7 @@ import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import "./index.css";
+import StarCanvas from "./components/StarCanvas";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -23,6 +24,7 @@ function App() {
   return (
     <div className="relative z-0 bg-primary">
       {isLoading && <LoadingScreen />}
+      <StarCanvas />
       <Hero />
       <About />
       <Skills />

@@ -8,21 +8,33 @@ const StarCanvas = () => {
     const ctx = canvas.getContext("2d");
     let animationFrameId;
 
+    const body = document.body;
+    const html = document.documentElement;
+    const height = Math.max(
+      body.scrollHeight,
+      body.offsetHeight,
+      html.clientHeight,
+      html.scrollHeight,
+      html.offsetHeight
+    );
+    console.log(height);
+
     // Set the initial canvas size
     const handleResize = () => {
       canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
+      canvas.height = height;
     };
 
     // Handle the resizing on initial load and on window resize
     handleResize();
     window.addEventListener("resize", handleResize);
 
-    const stars = Array.from({ length: 100 }, () => ({
+    // Generate stars
+    const stars = Array.from({ length: 1000 }, () => ({
       x: Math.random() * canvas.width,
       y: Math.random() * canvas.height,
       size: Math.random() * 2,
-      speed: Math.random() * 0.5,
+      speed: Math.random() * 0.75,
     }));
 
     const animate = () => {
@@ -40,13 +52,6 @@ const StarCanvas = () => {
       animationFrameId = requestAnimationFrame(animate);
     };
 
-    // const handleResize = () => {
-    //   canvas.width = document.documentElement.scrollWidth;
-    //   canvas.height = document.body.scrollHeight;
-    // };
-
-    // handleResize();
-    // window.addEventListener("resize", handleResize);
     animate();
 
     return () => {
@@ -55,7 +60,7 @@ const StarCanvas = () => {
     };
   }, []);
 
-  return <canvas ref={canvasRef} className="absolute inset-0 z-50" />;
+  return <canvas ref={canvasRef} className="absolute inset-0 z-0" />;
 };
 
 export default StarCanvas;
