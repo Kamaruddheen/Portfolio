@@ -21,7 +21,7 @@ const StarCanvas = () => {
 
     // Set the initial canvas size
     const handleResize = () => {
-      canvas.width = window.innerWidth;
+      canvas.width = html.innerWidth;
       canvas.height = height;
     };
 
