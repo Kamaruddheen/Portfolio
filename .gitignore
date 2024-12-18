@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Others
+favicon_io.zip
+src/assets/images/profile-pic.svg
