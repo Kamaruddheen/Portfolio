@@ -8,21 +8,21 @@ const StarCanvas = () => {
     const ctx = canvas.getContext("2d");
     let animationFrameId;
 
-    const body = document.body;
-    const html = document.documentElement;
-    const height = Math.max(
-      body.scrollHeight,
-      body.offsetHeight,
-      html.clientHeight,
-      html.scrollHeight,
-      html.offsetHeight
-    );
-    console.log(height);
-
     // Set the initial canvas size
     const handleResize = () => {
-      canvas.width = html.innerWidth;
-      canvas.height = height;
+      const html = document.documentElement;
+      const body = document.body;
+
+      const width = Math.min(
+        body.scrollWidth,
+        body.offsetWidth, // Good
+        html.clientWidth, // Good
+        html.scrollWidth,
+        html.offsetWidth // Good
+      );
+
+      canvas.width = width;
+      canvas.height = html.offsetHeight;
     };
 
     // Handle the resizing on initial load and on window resize
@@ -51,6 +51,7 @@ const StarCanvas = () => {
 
       animationFrameId = requestAnimationFrame(animate);
     };
+    ctx.fillStyle = "red";
 
     animate();
 
@@ -64,3 +65,26 @@ const StarCanvas = () => {
 };
 
 export default StarCanvas;
+
+/* 
+* Experiment purpose
+const body = document.body;
+
+
+const height = Math.max(
+  body.scrollHeight, // Giving extra space because of scrolling
+  body.offsetHeight, // Good
+  html.clientHeight, // Good
+  html.scrollHeight, // Giving extra space because of scrolling
+  html.offsetHeight  // Good
+);
+
+const width = Math.min(
+  body.scrollWidth, 
+  body.offsetWidth, // Good
+  html.clientWidth, // Good
+  html.scrollWidth,
+  html.offsetWidth  // Good
+);
+
+*/
