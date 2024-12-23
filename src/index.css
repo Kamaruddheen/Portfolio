@@ -1,6 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&family=Roboto:wght@400;700&family=Poppins:wght@400;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Roboto", sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Rubik", sans-serif;
+  }
+
+  .accent-text {
+    font-family: "Poppins", sans-serif;
+  }
+}
 
 * {
   margin: 0;
