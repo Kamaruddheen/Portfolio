@@ -69,7 +69,7 @@ export const skillsData = [
     ],
   },
   {
-    title: "Tools & Technologies",
+    title: "Tools",
     icon: FaTools,
     skills: [
       { name: "Git", icon: FaGit },

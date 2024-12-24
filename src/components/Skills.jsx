@@ -6,7 +6,7 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="h-screen flex items-center justify-center py-20 bg-primary"
+      className="lg:h-screen flex items-center justify-center py-20 bg-primary"
     >
       <motion.div
         initial={{ opacity: 0 }}
@@ -21,7 +21,7 @@ const Skills = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {skillsData.map((category, index) => (
             <motion.div
               key={category.title}
@@ -31,9 +31,9 @@ const Skills = () => {
               transition={{ delay: index * 0.1 }}
               className="bg-tertiary p-6 rounded-2xl"
             >
-              <h3 className="text-white text-xl font-semibold mb-4 flex items-center gap-2">
-                <category.icon className="text-[#915EFF] w-5 h-5" />
+              <h3 className="sm:w-48 text-white text-xl font-semibold mb-4 flex items-center justify-center gap-2">
                 {category.title}
+                {/* <category.icon className="text-electric-violet w-5 h-5" /> */}
               </h3>
               <div className="space-y-3">
                 {category.skills.map((skill, skillIndex) => (

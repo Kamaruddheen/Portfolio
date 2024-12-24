@@ -24,7 +24,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="h-screen flex items-center justify-center py-20 bg-tertiary"
+      className="md:h-screen flex items-center justify-center py-20 bg-tertiary"
     >
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
@@ -59,7 +59,7 @@ const About = () => {
           >
             <div className="w-full max-w-md h-[400px] bg-tertiary flex items-center justify-center">
               <img
-                className="h-48 w-full object-contain violet-gradient md:h-full md:w-92 rounded-2xl border-2 border-[#915EFF]"
+                className="h-48 w-full object-contain violet-gradient md:h-full md:w-92 rounded-2xl border-2 border-electric-violet"
                 src={profile}
                 alt="Muhammadh Kamaruddheen"
               />

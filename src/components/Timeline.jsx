@@ -1,16 +1,17 @@
-import React from 'react';
-import { VerticalTimeline } from 'react-vertical-timeline-component';
-import 'react-vertical-timeline-component/style.min.css';
-import TimelineItem from './TimelineItem';
-import { timelineData } from '../data/timelineData';
+import React from "react";
+import { VerticalTimeline } from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
+import TimelineItem from "./TimelineItem";
+import { timelineData } from "../data/timelineData";
 
 const Timeline = () => {
   return (
     <section id="timeline" className="py-20 bg-tertiary">
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-4xl font-bold text-center text-white mb-16">Journey</h2>
-        
-        <VerticalTimeline>
+        <h2 className="text-4xl font-bold text-center text-white mb-16">
+          Journey
+        </h2>
+        <VerticalTimeline className="py-0 before:bg-electric-violet">
           {timelineData.map((item, index) => (
             <TimelineItem key={index} item={item} />
           ))}

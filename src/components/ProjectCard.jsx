@@ -27,7 +27,7 @@ const ProjectCard = ({ project, index }) => {
             onClick={() => window.open(source_code_link, "_blank")}
             className="bg-tertiary w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
           >
-            <FaGithub className="w-1/2 h-1/2 text-white" />
+            <FaGithub className="w-1/2 h-1/2 text-secondary" />
           </motion.div>
           <motion.div
             whileHover={{ scale: 1.1 }}
@@ -35,7 +35,7 @@ const ProjectCard = ({ project, index }) => {
             onClick={() => window.open(live_demo_link, "_blank")}
             className="bg-tertiary w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
           >
-            <FaExternalLinkAlt className="w-1/2 h-1/2 text-white" />
+            <FaExternalLinkAlt className="w-1/2 h-1/2 text-secondary" />
           </motion.div>
         </div>
       </div>
@@ -57,10 +57,10 @@ const ProjectCard = ({ project, index }) => {
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.3 + tagIndex * 0.1 }}
-            className="flex items-center gap-1 text-[14px] text-white"
+            className="flex items-center gap-1 text-[14px] text-electric-violet"
           >
             <tag.icon className="w-4 h-4" />
-            <span>#{tag.name}</span>
+            <span>{tag.name}</span>
           </motion.div>
         ))}
       </div>

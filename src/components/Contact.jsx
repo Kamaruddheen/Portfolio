@@ -95,7 +95,7 @@ const Contact = () => {
               type="submit"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-[#915EFF] w-full py-3 px-8 rounded-xl outline-none text-white font-bold shadow-md"
+              className="bg-electric-violet w-full py-3 px-8 rounded-xl outline-none text-white font-bold shadow-md"
             >
               {loading ? "Sending..." : "Send Message"}
             </motion.button>

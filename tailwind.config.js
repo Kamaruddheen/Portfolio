@@ -7,6 +7,7 @@ export default {
         primary: "#050816",
         secondary: "#aaa6c3",
         tertiary: "#151030",
+        "electric-violet": "#915EFF",
       },
       fontFamily: {
         rubik: ["Rubik", "sans-serif"],

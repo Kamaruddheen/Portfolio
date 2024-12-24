@@ -16,14 +16,14 @@ const LoadingScreen = () => {
         transition={{ duration: 1.5 }}
         className="relative"
       >
-        <div className="w-20 h-20 border-4 border-[#915EFF] rounded-full border-t-transparent animate-spin" />
+        <div className="w-20 h-20 border-4 border-electric-violet rounded-full border-t-transparent animate-spin" />
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5 }}
           className="absolute inset-0 flex items-center justify-center"
         >
-          <span className="text-[#915EFF] font-bold">MK</span>
+          <span className="text-electric-violet font-bold">MK</span>
         </motion.div>
       </motion.div>
     </motion.div>
