@@ -55,11 +55,27 @@ const Footer = () => {
               <h4 className="text-white font-semibold mb-4">Connect</h4>
               <div className="flex gap-4">
                 {[
-                  { Icon: FaGithub, link: socialLinks.github },
-                  { Icon: FaLinkedin, link: socialLinks.linkedin },
-                  { Icon: FaTwitter, link: socialLinks.twitter },
-                  { Icon: FaEnvelope, link: socialLinks.email },
-                ].map(({ Icon, link }, index) => (
+                  {
+                    Icon: FaGithub,
+                    link: socialLinks.github,
+                    label: "github link",
+                  },
+                  {
+                    Icon: FaLinkedin,
+                    link: socialLinks.linkedin,
+                    label: "linkedin link",
+                  },
+                  {
+                    Icon: FaTwitter,
+                    link: socialLinks.twitter,
+                    label: "twitter link",
+                  },
+                  {
+                    Icon: FaEnvelope,
+                    link: socialLinks.email,
+                    label: "email link",
+                  },
+                ].map(({ Icon, link, label }, index) => (
                   <motion.a
                     key={index}
                     href={link}
@@ -67,6 +83,7 @@ const Footer = () => {
                     rel="noopener noreferrer"
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
+                    aria-label={label}
                     className="relative w-10 h-10 rounded-full bg-tertiary flex items-center justify-center hover:bg-electric-violet transition-colors"
                   >
                     <Icon className="w-5 h-5 text-white" />
