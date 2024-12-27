@@ -14,10 +14,10 @@ const Contact = () => {
 
     try {
       await emailjs.sendForm(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
+        import.meta.env.VITE_EMAILJS_SERVICE_ID, // service ID
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID, // template ID
         formRef.current,
-        "YOUR_PUBLIC_KEY"
+        import.meta.env.VITE_EMAILJS_USER_ID // user ID
       );
       toast.success("Message sent successfully!");
       e.target.reset();
@@ -60,7 +60,7 @@ const Contact = () => {
               </label>
               <input
                 type="text"
-                name="name"
+                name="full_name"
                 required
                 className="relative bg-tertiary py-4 px-6 text-white rounded-lg w-full outline-none border-none"
                 placeholder="Enter your name"
@@ -95,14 +95,14 @@ const Contact = () => {
               type="submit"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-electric-violet w-full py-3 px-8 rounded-xl outline-none text-white font-bold shadow-md"
+              className="bg-electric-violet w-full py-3 px-8 rounded-xl outline-none text-white font-bold shadow-md relative"
             >
               {loading ? "Sending..." : "Send Message"}
             </motion.button>
           </motion.form>
         </div>
       </motion.div>
-      <ToastContainer position="bottom-right" theme="dark" />
+      <ToastContainer position="top-right" theme="dark" />
     </section>
   );
 };

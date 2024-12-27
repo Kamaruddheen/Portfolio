@@ -37,17 +37,17 @@ const About = () => {
           >
             <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
             <p className="text-secondary text-lg">
-              I'm Muhammadh Kamaruddheen, a dedicated Full Stack Developer with
-              experience in building robust web applications. My journey in
+              I&apos;m Muhammadh Kamaruddheen, a dedicated Full Stack Developer
+              with experience in building robust web applications. My journey in
               technology started with a strong foundation in Computer Science,
-              and I've since grown into a versatile developer capable of
+              and I&apos;ve since grown into a versatile developer capable of
               handling complex projects.
             </p>
             <p className="text-secondary text-lg mt-4">
-              With experience at Infosys and various technical roles, I've
-              developed a comprehensive understanding of software development
-              lifecycles and best practices. I'm passionate about creating
-              efficient, scalable solutions that make a real difference.
+              With experience at Infosys, I&apos;ve developed a comprehensive
+              understanding of software development lifecycles and best
+              practices. I&apos;m passionate about creating efficient, scalable
+              solutions that make a real difference.
             </p>
           </motion.div>
           <motion.div
