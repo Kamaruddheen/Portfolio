@@ -24,7 +24,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="md:h-screen flex items-center justify-center py-20 bg-tertiary"
+      className="lg:h-screen flex items-center justify-center py-20 bg-tertiary"
     >
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
@@ -37,17 +37,23 @@ const About = () => {
           >
             <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
             <p className="text-secondary text-lg">
-              I&apos;m Muhammadh Kamaruddheen, a dedicated Full Stack Developer
-              with experience in building robust web applications. My journey in
-              technology started with a strong foundation in Computer Science,
-              and I&apos;ve since grown into a versatile developer capable of
-              handling complex projects.
+              Hi! I’m a <strong>full-stack developer</strong> with a passion for
+              coding, <em>problem-solving</em>, and continuous learning. I began
+              my career at <strong>Infosys</strong>, where I gained valuable
+              experience working with a talented team and supporting
+              enterprise-level solutions. With a degree in Computer Science, I
+              specialize in the <strong>MERN stack</strong> and further honed my
+              skills through Pesto Tech’s program, where I built projects like{" "}
+              <em>WorkoutWings</em> 🚀.
             </p>
             <p className="text-secondary text-lg mt-4">
-              With experience at Infosys, I&apos;ve developed a comprehensive
-              understanding of software development lifecycles and best
-              practices. I&apos;m passionate about creating efficient, scalable
-              solutions that make a real difference.
+              My journey in tech began with an internship that pushed me to move
+              beyond textbooks and embrace self-learning. Since then, I’ve been
+              focused on building <strong>scalable</strong> and{" "}
+              <strong>efficient</strong> applications. 💻 I’m driven by
+              challenges and always eager to learn new technologies. Outside of
+              coding, I enjoy photography 📸 and bike rides 🚴‍♂️, blending my
+              creative side with my tech journey.
             </p>
           </motion.div>
           <motion.div
@@ -57,7 +63,7 @@ const About = () => {
             viewport={{ once: true }}
             className="flex items-center justify-center"
           >
-            <div className="w-full max-w-md h-[400px] bg-tertiary flex items-center justify-center">
+            <div className="w-full max-w-md md:h-[400px] bg-tertiary flex items-center justify-center">
               <img
                 className="h-48 w-full object-contain violet-gradient md:h-full md:w-92 rounded-2xl border-2 border-electric-violet"
                 src={profile}

@@ -64,12 +64,12 @@ export const projectsData = [
         icon: FaPython,
       },
       {
-        name: "bootstrap",
-        icon: FaBootstrap,
-      },
-      {
         name: "Django",
         icon: DiDjango,
+      },
+      {
+        name: "bootstrap",
+        icon: FaBootstrap,
       },
       {
         name: "jQuery",
@@ -94,7 +94,7 @@ export const projectsData = [
     ],
     image: attendance_thumbnail,
     source_code_link: "https://github.com/Kamaruddheen/attendance-report",
-    live_demo_link: "https://demo.com",
+    // live_demo_link: "https://demo.com",
   },
   {
     title: "Crown Clothing",

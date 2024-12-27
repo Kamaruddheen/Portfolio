@@ -21,22 +21,26 @@ const ProjectCard = ({ project, index }) => {
           className="w-full h-full object-cover rounded-2xl"
         />
         <div className="absolute inset-0 flex justify-end gap-2 m-3">
-          <motion.div
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-            onClick={() => window.open(source_code_link, "_blank")}
-            className="bg-tertiary w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
-          >
-            <FaGithub className="w-1/2 h-1/2 text-secondary" />
-          </motion.div>
-          <motion.div
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-            onClick={() => window.open(live_demo_link, "_blank")}
-            className="bg-tertiary w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
-          >
-            <FaExternalLinkAlt className="w-1/2 h-1/2 text-secondary" />
-          </motion.div>
+          {source_code_link && (
+            <motion.div
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              onClick={() => window.open(source_code_link, "_blank")}
+              className="bg-tertiary w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+            >
+              <FaGithub className="w-1/2 h-1/2 text-secondary" />
+            </motion.div>
+          )}
+          {live_demo_link && (
+            <motion.div
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              onClick={() => window.open(live_demo_link, "_blank")}
+              className="bg-tertiary w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+            >
+              <FaExternalLinkAlt className="w-1/2 h-1/2 text-secondary" />
+            </motion.div>
+          )}
         </div>
       </div>
 
