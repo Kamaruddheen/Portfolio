@@ -3,7 +3,16 @@ import { motion } from "framer-motion";
 import { VerticalTimelineElement } from "react-vertical-timeline-component";
 
 const TimelineItem = ({ item }) => {
-  const { title, subtitle, date, description, icon: Icon, type } = item;
+  const {
+    title,
+    subtitle,
+    date,
+    para1,
+    para2,
+    description,
+    icon: Icon,
+    type,
+  } = item;
 
   return (
     <VerticalTimelineElement
@@ -32,7 +41,8 @@ const TimelineItem = ({ item }) => {
         <h4 className="vertical-timeline-element-subtitle text-secondary ">
           {subtitle}
         </h4>
-        <p>{description}</p>
+        <p>{para1}</p>
+        <p>{para2}</p>
       </motion.div>
     </VerticalTimelineElement>
   );
