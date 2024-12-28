@@ -30,7 +30,7 @@ const ScrollButton = () => {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0, transition: { delay: 3.6 } }}
           exit={{ opacity: 0, y: 20 }}
-          className="fixed bottom-10 left-1/2 transform -translate-x-1/2 cursor-pointer z-50"
+          className="fixed bottom-10 w-full flex justify-center items-center transform -translate-x-1/2 cursor-pointer z-50"
           onClick={scrollToNextSection}
         >
           <motion.div
