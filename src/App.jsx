@@ -9,6 +9,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import "./index.css";
 import StarCanvas from "./components/StarCanvas";
+import ScrollButton from "./components/ScrollButton";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -24,7 +25,8 @@ function App() {
   return (
     <div className="relative z-0 bg-primary">
       {isLoading && <LoadingScreen />}
-      <StarCanvas />
+      <ScrollButton /> {/* Scroll Button */}
+      <StarCanvas /> {/* Background animation */}
       <Hero />
       <About />
       <Skills />

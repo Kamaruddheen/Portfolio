@@ -1,9 +1,10 @@
 import React from "react";
 import HeroContent from "./HeroContent";
+import ScrollButton from "./ScrollButton";
 
 const Hero = () => {
   return (
-    <section className="w-full h-screen overflow-hidden bg-primary">
+    <section id="hero" className="w-full h-screen overflow-hidden bg-primary">
       <HeroContent />
     </section>
   );
